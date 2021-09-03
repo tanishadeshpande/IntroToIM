@@ -1,3 +1,6 @@
 # Assignment 1
 
-# # Create a Self Portrait
+## Creating a Self Portrait
+
+For the first assignment, this is the portrait I created:
+
