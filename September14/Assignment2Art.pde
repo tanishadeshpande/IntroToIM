@@ -18,7 +18,7 @@ void setup(){
   
   rectMode(CENTER);
   
-  //stroke(254, 200, 216);
+  
   
   stroke(255);
   strokeWeight(20);
@@ -27,7 +27,7 @@ void setup(){
  
 void draw(){
   background(255);
-  //background(254,200,216);
+  
   translate(width/2,height/2);
   for(int i = 0; i< 100; i++){
     if (col){
