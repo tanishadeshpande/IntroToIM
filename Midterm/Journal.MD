@@ -45,4 +45,12 @@ and so I decided to try again the next day. Instead, I made my boolean variables
 I tried to work on the collision detection between the obstacles and cat once again, but it didn't end up working again and it was very glitchy. Just to test something out,
 I changed my obstacles from rectangles to squares and realised that it was much easier to use the dist() function when I was trying to figure out how to detect
 collisions between two circles. I remembered what Michael had said about my project having too many moving parts, and so I decided to modify my project a little bit.
-Instead of having the cat avoid obstacles and catch mice, I decided to change it to the game being the cat just catching the mice and it would be won 
+Instead of having the cat avoid obstacles and catch mice, I decided to change it to the game being the cat just catching the mice and it would be won if the cat caught 30 rats. Changing my idea didn't need much work, since the rat class would be the exact same as the obstacle class, except the rats would be circles rather than rectangles. I did this and made a collision() function, using println to count the number of collisions to make sure that the collisions were in fact being detected, and realised that my code was finally working!! Then I added the image of the rat, and added a sound that would come when a collision occured. I also made a scoring mechanism where the score would keep increasing by 1 every time a collision occured.
+
+## Day 5:
+
+After figuring out the collision detection, the other aspects were fairly smooth sailing. I made my screen functions to help the program determine which stage of the game it currently was at (game starting or game ending). 
+
+## Sources:
+
+To figure out how to make my obstacles appear as if they were moving downwards, I used Dan Shiffman's purple rain tutorial (https://www.youtube.com/watch?v=KkyIDI6rQJI). I also used the Coding Train's snake tutorial to figure out how to move my cat sideways without it leaving the screen.
