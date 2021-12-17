@@ -31,5 +31,18 @@ my piano.
 
 # Day 4
 
-Today I started by making an array of the sounds for my piano. This was similar to a code I had written in class way back when we were learning about sound files in Fall 1, so this was
-fairly easy to make. Then, along with the changing background I added a soundfile.play() command in each of my If loops so that the button being pressed would trigger a sound file. However, 
+Today I started by making an array of the sounds for my piano. This was similar to a code I had written in class way back when we were learning about sound files in Fall 1, so this was fairly easy to make. Then, along with the changing background I added a soundfile.play() command in each of my If loops so that the button being pressed would trigger a sound file. However, there was a problem with the sounds as they would all play simultaneously and very quickly one after the other. I realised that this was because the information was being sent to processing too quickly, and so in my arduino code I added a delay() function so that the output was not received too fast. When I did this, the sound for the key I was pressing started playing fine. So far, I had only programmed the C key. 
+
+# Day 5
+
+Today, I decided to add the sounds for the other keys. This worked well, but the only issue was that there was a slight overlap between the two sounds when one was released and the other was pressed down. To fix this, I went to the reference page for Sound on the processing website, and found out about the soundIsPlaying() function. Doing this, I made a function that would check if another sound was playing when a key was pressed, and if it was then stop the previous sound so the next sound could play. By doing so, I made it possible for me to play chords too. Once this was done, my piano was done. After this all I had to do was the visualisation part.
+
+# Day 6
+
+Today I worked on the visualisation part. It was easy, as it was simply generative art and we had already done this multiple times in Fall 1. I assigned a colour to each key, and then coded the processing code. This was very simple, but once this was done I realised I did not like the shades of my shapes very much so I changed it to make them more pastel. I thought it would also look nicer if opacity was randomised, and so I randomised that between 50 and 225 too, and this made it look much cleaner. Finally, it began to work well together. 
+
+# Day 7
+
+After presenting it in class, I realised it would look nicer if the screen with the art was full screen. So I changed the dimensions of the screen from size(600,600) to fullScreen(). I also added a keyPressed function so that the screen would be cleared if a key on the laptop was pressed incase anyone wanted to restart their art piece.
+
+Overall, I had a lot of fun making this as I got to combine what I had learnt with music, which I am genuinely interested in!
